@@ -1,6 +1,6 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [Глеб Липатов](https://up.htmlacademy.ru/htmlcss/18/user/462481).
+* Студент: [Глеб Николаевич Липатов](https://up.htmlacademy.ru/htmlcss/18/user/462481).
 
 ---
 
