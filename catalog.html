@@ -6,71 +6,99 @@
   </head>
   <body>
   	<header class="main-header">
-  		<a class="logo-link">
-  			<img src="img/index-logo.html" alt="Логотип барбершопа'Бородинский'" width="371" height="155">
-  		</a>
-  		<nav class="main-nav">
-  			<ul class="main-menu">
-	  			<li class="main-menu__item"><a href="info.html" class="main-menu__link">информация</a></li>
-	  			<li class="main-menu__item"><a href="news.html" class="main-menu__link">новости</a></li>
-	  			<li class="main-menu__item"><a href="price.html" class="main-menu__link">прайс-лист</a></li>
-	  			<li class="main-menu__item"><a href="shop.html" class="main-menu__link">магазин</a></li>
-	  			<li class="main-menu__item"><a href="contacts.html" class="main-menu__link">контакты</a></li>
-  			</ul>
-  			<ul class="log-in">
-  				<li class="log-in__item"><a href="#" class="log-in__link">вход</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+      <a class="logo-link">
+        <img src="img/index-logo.html" alt="Логотип барбершопа'Бородинский'" width="371" height="155">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-menu">
+
+          <li class="main-menu__item">
+            <a href="info.html" class="main-menu__link">информация</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="news.html" class="main-menu__link">новости</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="price.html" class="main-menu__link">прайс-лист</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="shop.html" class="main-menu__link">магазин</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="contacts.html" class="main-menu__link">контакты</a>
+          </li>
+        </ul>
+        <ul class="log-in">
+          <li class="log-in__item"><a href="#" class="log-in__link">вход</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="main-catalog">
       <h1 class="visually-hidden">Каталог "Барбершоп"</h1>
       <section class="care">
-        <h2 class="care-title">Средства для ухода</h2>
+        <h2 class="care__title">Средства для ухода</h2>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs__item">
             <a href="index.html" class="breadcrumbs-link">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a href="shop.html" class="breadcrumbs-link">Магазин</a>
           </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Средства для ухода</a>
-          </li>
+          <li class="breadcrumbs-item">Средства для ухода</li>
         </ul>
       </section>
-      <nav class="sidebar-menu">
-        <form action="" class="sidebar-menu__form">
-          <h2 class="sidebar-menu__title">Производители</h2>
+      <nav class="catalog-filters">
+        <form action="https://echo.htmlacademy.ru" class="catalog-filters__form" method="get">
+        <fieldset class="catalog-filters__fieldset">
+          <legend>Производители</legend>
+            <ul class="catalog-filters__list">
+              <li class="catalog-filters__item">
+                <input type="checkbox" class="catalog-filters__input" name="creators" id="Baxter">
+                <label for="Baxter" class="catalog-filters__label">Baxter of California</label>            
+              </li>
+  
+              <li class="catalog-filters__item">
+                <input type="checkbox" class="catalog-filters__input" name="creators" id="Natty">
+                <label for="Natty" class="catalog-filters__label">Mr Natty</label>            
+              </li>
+  
+              <li class="catalog-filters__item">
+                <input type="checkbox" class="catalog-filters__input" name="creators" id="Suavecito">
+                <label for="Suavecito" class="catalog-filters__label">Suavecito</label>            
+              </li>
+  
+              <li class="catalog-filters__item">
+                <input type="checkbox" class="catalog-filters__input" name="creators" id="Malin">
+                <label for="Malin" class="catalog-filters__label">Malin+Goetz</label>            
+              </li>
+  
+              <li class="catalog-filters__item">
+                <input type="checkbox" class="catalog-filters__input" name="creators" id="Murray’s">
+                <label for="Murray’s" class="catalog-filters__label">Murray’s</label>            
+              </li>
+  
+              <li class="catalog-filters__item">
+                <input type="checkbox" class="catalog-filters__input" name="creators" id="American">
+                <label for="American" class="catalog-filters__label">American Crew</label>            
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="catalog-filters__fieldset">
+          <legend>Группы товаров</legend>
+          <input type="radio" class="catalog-filters__input" name="group" id="group1">
+          <label for="group1" class="catalog-filters__label">Бритвенные принадлежности</label>
 
-          <input type="checkbox" class="sidebar-menu__input" name="creators" id="Baxter">
-          <label for="Baxter" class="sidebar-menu__label">Baxter of California</label>
+          <input type="radio" class="catalog-filters__input" name="group" id="group2">
+          <label for="group2" class="catalog-filters__label">Средства для ухода</label>
 
-          <input type="checkbox" class="sidebar-menu__input" name="creators" id="Natty">
-          <label for="Natty" class="sidebar-menu__label">Mr Natty</label>
-
-          <input type="checkbox" class="sidebar-menu__input" name="creators" id="Suavecito">
-          <label for="Suavecito" class="sidebar-menu__label">Suavecito</label>
-
-          <input type="checkbox" class="sidebar-menu__input" name="creators" id="Malin">
-          <label for="Malin" class="sidebar-menu__label">Malin+Goetz</label>
-
-          <input type="checkbox" class="sidebar-menu__input" name="creators" id="Murray’s">
-          <label for="Murray’s" class="sidebar-menu__label">Murray’s</label>
-
-          <input type="checkbox" class="sidebar-menu__input" name="creators" id="American">
-          <label for="American" class="sidebar-menu__label">American Crew</label>
-
-          <h2 class="sidebar-menu__title">Группы товаров</h2>
-
-          <input type="radio" class="sidebar-menu__input" name="group" id="group1">
-          <label for="group1" class="sidebar-menu__label">Бритвенные принадлежности</label>
-
-          <input type="radio" class="sidebar-menu__input" name="group" id="group2">
-          <label for="group2" class="sidebar-menu__label">Средства для ухода</label>
-
-          <input type="radio" class="sidebar-menu__input" name="group" id="group3">
-          <label for="group3" class="sidebar-menu__label">Аксессуары</label>
-          <button class="sidebar-menu__button button" type="button">Показать</button>
+          <input type="radio" class="catalog-filters__input" name="group" id="group3">
+          <label for="group3" class="catalog-filters__label">Аксессуары</label>
+        </fieldset>
+        <button class="sidebar-menu__button button" type="button">Показать</button>         
         </form>
       </nav>
       <section class="counter">
@@ -78,88 +106,86 @@
         <ul class="counter__list">
           <li class="counter__item">
             <a href="" class="counter__link">
-              <img src="" alt="" class="counter__img">
+              <img src="" alt="Набор для путешествий «Baxter of California»" class="counter__img">
               <h3 class="counter__subtitle">
                 Набор для путешествий<br>
                 «Baxter of California»
               </h3>
-              <b class="counter__coast">2 900 ₽</b>
-              <button class="counter__button button" type="button">Купить</button>
             </a>
+            <b class="counter__coast">2 900 ₽</b>
+            <button class="counter__button button" type="button">Купить</button>
           </li>
           <li class="counter__item">
             <a href="" class="counter__link">
-              <img src="" alt="" class="counter__img">
+              <img src="" alt="Увлажняющий кондиционер «Baxter of California»" class="counter__img">
               <h3 class="counter__subtitle">
                 Увлажняющий кондиционер<br>
                 «Baxter of California»
               </h3>
-              <b class="counter__coast">750 ₽</b>
-              <button class="counter__button button" type="button">Купить</button>
             </a>
+            <b class="counter__coast">750 ₽</b>
+            <button class="counter__button button" type="button">Купить</button>
           </li>
           <li class="counter__item">
             <a href="" class="counter__link">
-              <img src="" alt="" class="counter__img">
+              <img src="" alt="Гель для волос «SUAVECITO»" class="counter__img">
               <h3 class="counter__subtitle">
                 Гель для волос<br>
                 «SUAVECITO»
               </h3>
-              <b class="counter__coast">290 ₽</b>
-              <button class="counter__button button" type="button">Купить</button>
             </a>
+            <b class="counter__coast">290 ₽</b>
+            <button class="counter__button button" type="button">Купить</button>
           </li>
           <li class="counter__item">
             <a href="" class="counter__link">
-              <img src="" alt="" class="counter__img">
+              <img src="" alt="Глина для укладки волос «American crew»" class="counter__img">
               <h3 class="counter__subtitle">
                 Глина для укладки волос<br>
                 «American crew»
               </h3>
-              <b class="counter__coast">500 ₽</b>
-              <button class="counter__button button" type="button">Купить</button>
             </a>
+            <b class="counter__coast">500 ₽</b>
+            <button class="counter__button button" type="button">Купить</button>
           </li>
           <li class="counter__item">
             <a href="" class="counter__link">
-              <img src="" alt="" class="counter__img">
+              <img src="" alt="Гель для волос «AMERICAN CREW»" class="counter__img">
               <h3 class="counter__subtitle">
                 Гель для волос<br>
                 «AMERICAN CREW»
               </h3>
-              <b class="counter__coast">300 ₽</b>
-              <button class="counter__button button" type="button">Купить</button>
             </a>
+            <b class="counter__coast">300 ₽</b>
+            <button class="counter__button button" type="button">Купить</button>
           </li>
           <li class="counter__item">
             <a href="" class="counter__link">
-              <img src="" alt="" class="counter__img">
+              <img src="" alt="Набор для бритья «Baxter of California»" class="counter__img">
               <h3 class="counter__subtitle">
                 Набор для бритья<br>
                 «Baxter of California»
               </h3>
-              <b class="counter__coast">3 900 ₽</b>
-              <button class="counter__button button" type="button">Купить</button>
             </a>
+            <b class="counter__coast">3 900 ₽</b>
+            <button class="counter__button button" type="button">Купить</button>
           </li>
         </ul>
-        <nav class="counter-nav">
-          <ul class="counter-nav__list">
+        <nav class="catalog-pagination">
+          <ul class="catalog-pagination__list">
 
             <li class="counter-nav__item">
-              <a href="counter1.html" class="counter-nav__link">1</a>
+              <a href="counter1.html" class="catalog-pagination__link">1</a>
             </li>
 
-            <li class="counter-nav__item">
-              <a href="counter2.html" class="counter-nav__link">2</a>
+            <li class="catalog-pagination__item">2</li>
+
+            <li class="catalog-pagination__item">
+              <a href="counter3.html" class="catalog-pagination__link">3</a>
             </li>
 
-            <li class="counter-nav__item">
-              <a href="counter3.html" class="counter-nav__link">3</a>
-            </li>
-
-            <li class="counter-nav__item">
-              <a href="counter4.html" class="counter-nav__link">4</a>
+            <li class="catalog-pagination__item">
+              <a href="counter4.html" class="catalog-pagination__link">4</a>
             </li>
           </ul>
         </nav>
@@ -174,9 +200,18 @@
         <div class="main-footer__social">
           <b class="main-footer__social-text">давайте дружить!</b>
           <ul class="main-footer__social-list">
-            <li class="main-footer__social-item vk"><a href="#" class="main-footer__social-link vk"></a></li>
-            <li class="main-footer__social-item fb"><a href="#" class="main-footer__social-link fb"></a></li>
-            <li class="main-footer__social-item instagram"><a href="#" class="main-footer__social-link instagram"></a></li>
+
+            <li class="main-footer__social-item vk">
+              <a href="#" class="main-footer__social-link vk"></a>
+            </li>
+
+            <li class="main-footer__social-item fb">
+              <a href="#" class="main-footer__social-link fb"></a>
+            </li>
+
+            <li class="main-footer__social-item instagram">
+              <a href="#" class="main-footer__social-link instagram"></a>
+            </li>
           </ul>
         </div>
         <b class="main-footer__copyright-text">разработано</b>
