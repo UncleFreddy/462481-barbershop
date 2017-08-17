@@ -1,0 +1,26 @@
+body {
+	font-size: ;
+	line-height: ;
+	color: ;
+	font-weight: ;
+	font-family: ;
+}
+.visually-hidden {
+	display: none;
+}
+.title__h2 {
+	font-size: 30px;
+	line-height: 42px;
+	color: #000;
+	font-weight: bold;
+	font-family: PT Sans Narrow;
+	text-transform: uppercase;
+}
+.title__h3 {
+	font-size: 30px;
+	line-height: 42px;
+	color: #fff;
+	font-weight: bold;
+	font-family: PT Sans Narrow;
+	text-transform: uppercase;
+}
