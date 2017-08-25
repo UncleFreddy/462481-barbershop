@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog_body">
   	<header class="main-header">
-      <a class="logo-link">
-        <img src="img/index-logo.html" alt="Логотип барбершопа'Бородинский'" width="371" height="155">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.svg" alt="Барбершопа Бородинский" width="371" height="155">
       </a>
       <nav class="main-nav">
         <ul class="main-menu">
@@ -57,62 +59,62 @@
           <li class="breadcrumbs__item">
             <a href="index.html" class="breadcrumbs-link">Главная</a>
           </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs__item">
             <a href="shop.html" class="breadcrumbs-link">Магазин</a>
           </li>
-          <li class="breadcrumbs-item">Средства для ухода</li>
+          <li class="breadcrumbs__item">Средства для ухода</li>
         </ul>
       </section>
-      <nav class="catalog-filters">
+      <section class="catalog-filters">
         <form action="https://echo.htmlacademy.ru" class="catalog-filters__form" method="get">
-        <fieldset class="catalog-filters__fieldset">
+        <fieldset class="catalog_filters__fieldset">
           <legend>Производители</legend>
             <ul class="catalog-filters__list">
               <li class="catalog-filters__item">
-                <input type="checkbox" class="catalog-filters__input" name="creators" id="Baxter">
-                <label for="Baxter" class="catalog-filters__label">Baxter of California</label>            
+                <input type="checkbox" class="catalog-filters__input_checkbox visually-hidden" name="creators" id="Baxter">
+                <label for="Baxter" class="catalog-filters__label_checkbox">Baxter of California</label>            
               </li>
   
               <li class="catalog-filters__item">
-                <input type="checkbox" class="catalog-filters__input" name="creators" id="Natty">
-                <label for="Natty" class="catalog-filters__label">Mr Natty</label>            
+                <input type="checkbox" class="catalog-filters__input_checkbox visually-hidden" name="creators" id="Natty">
+                <label for="Natty" class="catalog-filters__label_checkbox">Mr Natty</label>            
               </li>
   
               <li class="catalog-filters__item">
-                <input type="checkbox" class="catalog-filters__input" name="creators" id="Suavecito">
-                <label for="Suavecito" class="catalog-filters__label">Suavecito</label>            
+                <input type="checkbox" class="catalog-filters__input_checkbox visually-hidden" name="creators" id="Suavecito">
+                <label for="Suavecito" class="catalog-filters__label_checkbox">Suavecito</label>            
               </li>
   
               <li class="catalog-filters__item">
-                <input type="checkbox" class="catalog-filters__input" name="creators" id="Malin">
-                <label for="Malin" class="catalog-filters__label">Malin+Goetz</label>            
+                <input type="checkbox" class="catalog-filters__input_checkbox visually-hidden" name="creators" id="Malin">
+                <label for="Malin" class="catalog-filters__label_checkbox">Malin+Goetz</label>            
               </li>
   
               <li class="catalog-filters__item">
-                <input type="checkbox" class="catalog-filters__input" name="creators" id="Murray’s">
-                <label for="Murray’s" class="catalog-filters__label">Murray’s</label>            
+                <input type="checkbox" class="catalog-filters__input_checkbox visually-hidden" name="creators" id="Murray’s">
+                <label for="Murray’s" class="catalog-filters__label_checkbox">Murray’s</label>            
               </li>
   
               <li class="catalog-filters__item">
-                <input type="checkbox" class="catalog-filters__input" name="creators" id="American">
-                <label for="American" class="catalog-filters__label">American Crew</label>            
+                <input type="checkbox" class="catalog-filters__input_checkbox visually-hidden" name="creators" id="American">
+                <label for="American" class="catalog-filters__label_checkbox">American Crew</label>            
               </li>
             </ul>
         </fieldset>
-        <fieldset class="catalog-filters__fieldset">
+        <fieldset class="catalog_filters__fieldset">
           <legend>Группы товаров</legend>
-          <input type="radio" class="catalog-filters__input" name="group" id="group1">
-          <label for="group1" class="catalog-filters__label">Бритвенные принадлежности</label>
+          <input type="radio" class="catalog-filters__input_radio visually-hidden" name="group" id="group1">
+          <label for="group1" class="catalog-filters__label_radio">Бритвенные принадлежности</label>
 
-          <input type="radio" class="catalog-filters__input" name="group" id="group2">
-          <label for="group2" class="catalog-filters__label">Средства для ухода</label>
+          <input type="radio" class="catalog-filters__input_radio visually-hidden" name="group" id="group2">
+          <label for="group2" class="catalog-filters__label_radio">Средства для ухода</label>
 
-          <input type="radio" class="catalog-filters__input" name="group" id="group3">
-          <label for="group3" class="catalog-filters__label">Аксессуары</label>
+          <input type="radio" class="catalog-filters__input_radio visually-hidden" name="group" id="group3">
+          <label for="group3" class="catalog-filters__label_radio">Аксессуары</label>
         </fieldset>
         <button class="sidebar-menu__button button" type="button">Показать</button>         
         </form>
-      </nav>
+      </section>
       <section class="counter">
         <h2 class="counter__title visually-hidden">Список товаров</h2>
         <ul class="counter__list">
@@ -121,7 +123,9 @@
               <img src="img/Baxter_of_California1.jpg" alt="Набор для путешествий «Baxter of California»" class="counter__img" width="220" height="165">
               <h3 class="counter__subtitle">
                 Набор для путешествий<br>
-                «Baxter of California»
+                <span>
+                  «Baxter of California» 
+                </span>
               </h3>
             </a>
             <b class="counter__coast">2 900 ₽</b>
@@ -132,7 +136,9 @@
               <img src="img/Baxter_of_California2.jpg" alt="Увлажняющий кондиционер «Baxter of California»" class="counter__img" width="220" height="165">
               <h3 class="counter__subtitle">
                 Увлажняющий кондиционер<br>
-                «Baxter of California»
+                <span>
+                  «Baxter of California» 
+                </span>
               </h3>
             </a>
             <b class="counter__coast">750 ₽</b>
@@ -143,7 +149,9 @@
               <img src="img/SUAVECITO.jpg" alt="Гель для волос «SUAVECITO»" class="counter__img" width="220" height="165">
               <h3 class="counter__subtitle">
                 Гель для волос<br>
-                «SUAVECITO»
+                <span>
+                  «SUAVECITO» 
+                </span>
               </h3>
             </a>
             <b class="counter__coast">290 ₽</b>
@@ -154,7 +162,9 @@
               <img src="img/American_crew.jpg" alt="Глина для укладки волос «American crew»" class="counter__img" width="220" height="165">
               <h3 class="counter__subtitle">
                 Глина для укладки волос<br>
-                «American crew»
+                <span>
+                  «American crew» 
+                </span>
               </h3>
             </a>
             <b class="counter__coast">500 ₽</b>
@@ -165,7 +175,9 @@
               <img src="img/American_crew2.jpg" alt="Гель для волос «AMERICAN CREW»" class="counter__img" width="220" height="165">
               <h3 class="counter__subtitle">
                 Гель для волос<br>
-                «AMERICAN CREW»
+                <span>
+                  «AMERICAN CREW» 
+                </span>
               </h3>
             </a>
             <b class="counter__coast">300 ₽</b>
@@ -176,7 +188,9 @@
               <img src="img/Baxter_of_California4.jpg" alt="Набор для бритья «Baxter of California»" class="counter__img" width="220" height="165">
               <h3 class="counter__subtitle">
                 Набор для бритья<br>
-                «Baxter of California»
+                <span>
+                  «Baxter of California» 
+                </span>
               </h3>
             </a>
             <b class="counter__coast">3 900 ₽</b>
@@ -187,30 +201,32 @@
           <ul class="catalog-pagination__list">
 
             <li class="counter-nav__item">
-              <a href="counter1.html" class="catalog-pagination__link">1</a>
-            </li>
-
-            <li class="catalog-pagination__item">2</li>
-
-            <li class="catalog-pagination__item">
-              <a href="counter3.html" class="catalog-pagination__link">3</a>
+              <a href="counter1.html" class="catalog-pagination__link button">1</a>
             </li>
 
             <li class="catalog-pagination__item">
-              <a href="counter4.html" class="catalog-pagination__link">4</a>
+              <a href="counter3.html" class="catalog-pagination__link button active">2</a>
+            </li>
+
+            <li class="catalog-pagination__item">
+              <a href="counter3.html" class="catalog-pagination__link button">3</a>
+            </li>
+
+            <li class="catalog-pagination__item">
+              <a href="counter4.html" class="catalog-pagination__link button">4</a>
             </li>
           </ul>
         </nav>
       </section>
       <footer class="main-footer">
         <p class="main-footer__contacts">
-          барбершоп «бородинский»<br> 
-          адрес: г. санкт-петербург, б.конюшенная, д.19/8
+          Барбершоп «Бородинский»<br> 
+          адрес: г. Санкт-Петербург, Б.Конюшенная, д.19/8
         </p>
-        <a href="#" class="main-footer__find-us">как найти нас?</a>
-        <p class="main-footer__telephone">телефон: +7 (495) 666-02-66</p>
+        <a href="#" class="main-footer__find-us">Как найти нас?</a>
+        <p class="main-footer__telephone">Телефон: +7 (495) 666-02-66</p>
         <div class="main-footer__social">
-          <b class="main-footer__social-text">давайте дружить!</b>
+          <b class="main-footer__social-text">Давайте дружить!</b>
           <ul class="main-footer__social-list">
 
             <li class="main-footer__social-item vk">
@@ -226,8 +242,8 @@
             </li>
           </ul>
         </div>
-        <b class="main-footer__copyright-text">разработано</b>
-        <a href="#" class="main-footer__copyright-link">html academy</a>
+        <b class="main-footer__copyright-text">Разработано</b>
+        <a href="" class="main-footer__copyright-link">html academy</a>
       </footer>
     </main>
   </body>
